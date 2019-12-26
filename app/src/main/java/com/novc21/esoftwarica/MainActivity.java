@@ -8,12 +8,16 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.novc21.esoftwarica.adapter.Students;
 import com.novc21.esoftwarica.fragment.AboutFragment;
 import com.novc21.esoftwarica.fragment.AddFragment;
 import com.novc21.esoftwarica.fragment.HomeFragment;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.List;
 
+public class MainActivity extends AppCompatActivity {
+    public static List<Students> studentsList = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

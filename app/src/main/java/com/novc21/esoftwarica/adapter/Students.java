@@ -2,7 +2,7 @@ package com.novc21.esoftwarica.adapter;
 
 public class Students {
     private String name, gender, address;
-    private int age, imgProfileId, imgDeleteId;
+    private int age, imgProfileId;
 
     public String getName() {
         return name;
@@ -44,20 +44,12 @@ public class Students {
         this.imgProfileId = imgProfileId;
     }
 
-    public int getImgDeleteId() {
-        return imgDeleteId;
-    }
 
-    public void setImgDeleteId(int imgDeleteId) {
-        this.imgDeleteId = imgDeleteId;
-    }
-
-    public Students(String name, String gender, String address, int age, int imgProfileId, int imgDeleteId) {
+    public Students(String name, String gender, String address, int age) {
         this.name = name;
         this.gender = gender;
         this.address = address;
         this.age = age;
         this.imgProfileId = imgProfileId;
-        this.imgDeleteId = imgDeleteId;
     }
 }
