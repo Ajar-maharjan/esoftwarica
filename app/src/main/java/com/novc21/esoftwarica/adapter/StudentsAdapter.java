@@ -3,8 +3,6 @@ package com.novc21.esoftwarica.adapter;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,8 +20,8 @@ import java.util.List;
 
 public class StudentsAdapter extends RecyclerView.Adapter<StudentsAdapter.StudentsViewHolder>{
 
-    Context context;
-    List<Students> studentsList;
+    private Context context;
+    private List<Students> studentsList;
 
 
     public StudentsAdapter(Context context, List<Students> studentsList) {
