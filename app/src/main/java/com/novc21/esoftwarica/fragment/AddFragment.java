@@ -17,9 +17,6 @@ import com.novc21.esoftwarica.MainActivity;
 import com.novc21.esoftwarica.R;
 import com.novc21.esoftwarica.adapter.Students;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * A simple {@link Fragment} subclass.
  */

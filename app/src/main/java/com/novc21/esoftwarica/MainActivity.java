@@ -1,11 +1,11 @@
 package com.novc21.esoftwarica;
 
+import android.os.Bundle;
+import android.view.MenuItem;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-
-import android.os.Bundle;
-import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.novc21.esoftwarica.adapter.Students;
@@ -25,6 +25,12 @@ public class MainActivity extends AppCompatActivity {
 
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
         bottomNav.setOnNavigationItemSelectedListener(navListener);
+        if (studentsList.isEmpty()) {
+            studentsList.add(new Students("raz nibbles", "male", "China, beijing", 18));
+            studentsList.add(new Students("james fagnan", "female", "USA, New York", 22));
+            studentsList.add(new Students("john Cobern", "other", "Australia, Sydney", 19));
+        }
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListener = new BottomNavigationView.OnNavigationItemSelectedListener() {

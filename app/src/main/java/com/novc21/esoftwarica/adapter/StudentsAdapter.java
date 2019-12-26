@@ -12,6 +12,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.novc21.esoftwarica.MainActivity;
 import com.novc21.esoftwarica.R;
 
 import java.util.List;
@@ -69,6 +70,13 @@ public class StudentsAdapter extends RecyclerView.Adapter<StudentsAdapter.Studen
                 Toast.makeText(context, delStudents + "is removed", Toast.LENGTH_SHORT).show();
             }
         });
+
+        holder.imgEdit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 
     @Override
@@ -90,5 +98,7 @@ public class StudentsAdapter extends RecyclerView.Adapter<StudentsAdapter.Studen
             imgEdit = itemView.findViewById(R.id.imgEdit);
         }
     }
+
+
 
 }
