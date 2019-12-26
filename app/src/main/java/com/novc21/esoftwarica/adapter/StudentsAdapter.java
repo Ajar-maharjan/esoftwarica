@@ -76,11 +76,16 @@ public class StudentsAdapter extends RecyclerView.Adapter<StudentsAdapter.Studen
         holder.imgEdit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Students edtStudents = studentsList.get(position);
-                int index = studentsList.indexOf(edtStudents);
-                EditStudent.index = index;
-                Intent intent = new Intent(context, EditStudent.class);
-                context.startActivity(intent);
+                try {
+                    Students edtStudents = studentsList.get(position);
+                    int index = studentsList.indexOf(edtStudents);
+                    EditStudent.index = index;
+                    Intent intent = new Intent(context, EditStudent.class);
+                    context.startActivity(intent);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    Toast.makeText(context, "Refresh the tab", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
