@@ -12,30 +12,38 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="5dp"
-
         android:text="Student Details"
         android:textSize="40sp"
         android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/etName"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:hint="Full Name"
-        android:padding="5dp"
-        android:textSize="25sp" />
+        android:layout_height="wrap_content">
 
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Full Name"
+            android:padding="5dp"
+            android:textSize="25sp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
-        android:id="@+id/etAge"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:hint="Age"
-        android:inputType="number"
-        android:padding="5dp"
-        android:textSize="25sp" />
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Age"
+            android:inputType="number"
+            android:padding="5dp"
+            android:textSize="25sp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
 
     <TextView
@@ -76,14 +84,19 @@
             android:textSize="22sp" />
     </RadioGroup>
 
-    <EditText
-        android:id="@+id/etAddress"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:hint="Address"
-        android:padding="5dp"
-        android:textSize="25sp" />
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Address"
+            android:padding="5dp"
+            android:textSize="25sp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btnSave"
