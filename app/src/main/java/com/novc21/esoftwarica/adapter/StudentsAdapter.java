@@ -69,7 +69,8 @@ public class StudentsAdapter extends RecyclerView.Adapter<StudentsAdapter.Studen
                 Students delStudents = studentsList.get(position);
                 studentsList.remove(position);
                 notifyItemRemoved(position);
-                Toast.makeText(context, delStudents + "is removed", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, delStudents.getName() + " is removed.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "Refresh tab to edit after deleting student.", Toast.LENGTH_SHORT).show();
             }
         });
 
